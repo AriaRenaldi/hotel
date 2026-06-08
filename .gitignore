@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Nuxt / frontend build output
+.nuxt/
+.output/
+dist/
+
+# Laravel generated files
+storage/logs/*.log
+bootstrap/cache/*.php
+
+# Flutter / Android generated files
+hotel_mobile_user/.dart_tool/
+hotel_mobile_user/.flutter-plugins
+hotel_mobile_user/.flutter-plugins-dependencies
+hotel_mobile_user/build/
+hotel_mobile_user/android/.gradle/
+hotel_mobile_user/android/app/build/
+hotel_mobile_user/android/build/
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+Thumbs.db
+desktop.ini

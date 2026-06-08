@@ -1,0 +1,53 @@
+/* assets/css/main.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-navy-50: #f0f4f8;
+    --color-navy-100: #d9e2ec;
+    --color-navy-200: #bccde0;
+    --color-navy-300: #9bb5d0;
+    --color-navy-400: #7a9bc0;
+    --color-navy-500: #5a82b0;
+    --color-navy-600: #3a6a9f;
+    --color-navy-700: #1e4d7a;
+    --color-navy-800: #0f3b5c;
+    --color-navy-900: #082c44;
+  }
+}
+
+@layer components {
+  .btn-navy {
+    @apply bg-navy-600 text-white px-4 py-2 rounded-lg hover:bg-navy-700 transition-all duration-300 font-semibold shadow-md hover:shadow-lg;
+  }
+  
+  .btn-navy-outline {
+    @apply border-2 border-navy-600 text-navy-600 px-4 py-2 rounded-lg hover:bg-navy-600 hover:text-white transition-all duration-300 font-semibold;
+  }
+  
+  .card {
+    @apply bg-white rounded-2xl shadow-lg border border-navy-100 hover:shadow-xl transition-all duration-300;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2 border border-navy-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent transition-all duration-300;
+  }
+  
+  .badge-success {
+    @apply bg-emerald-100 text-emerald-800 px-2 py-1 text-xs rounded-full font-semibold;
+  }
+  
+  .badge-warning {
+    @apply bg-amber-100 text-amber-800 px-2 py-1 text-xs rounded-full font-semibold;
+  }
+  
+  .badge-danger {
+    @apply bg-rose-100 text-rose-800 px-2 py-1 text-xs rounded-full font-semibold;
+  }
+  
+  .badge-info {
+    @apply bg-navy-100 text-navy-800 px-2 py-1 text-xs rounded-full font-semibold;
+  }
+}
